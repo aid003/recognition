@@ -4,7 +4,7 @@ import { AVAILABLE_MODELS } from "@/shared/config/models";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const allowedModels = new Set(AVAILABLE_MODELS.map((model) => model.id));
+const allowedModels = new Set<string>(AVAILABLE_MODELS.map((model) => model.id));
 
 export async function POST(request: Request) {
   if (!process.env.OPENAI_API_KEY) {

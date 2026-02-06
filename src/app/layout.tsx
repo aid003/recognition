@@ -2,14 +2,7 @@ import "@mantine/core/styles.css";
 import "./globals.css";
 
 import { ColorSchemeScript } from "@mantine/core";
-import { Inter } from "next/font/google";
 import Providers from "./providers";
-
-const inter = Inter({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-inter",
-  display: "swap"
-});
 
 export const metadata = {
   title: "Voice Chat",
@@ -18,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru" className={inter.variable}>
+    <html lang="ru">
       <head>
         <ColorSchemeScript defaultColorScheme="light" />
       </head>

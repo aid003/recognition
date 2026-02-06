@@ -5,7 +5,7 @@ import { MantineProvider, createTheme } from "@mantine/core";
 const theme = createTheme({
   primaryColor: "violet",
   defaultRadius: "md",
-  fontFamily: "var(--font-inter), system-ui, -apple-system, sans-serif"
+  fontFamily: "system-ui, -apple-system, sans-serif"
 });
 
 export default function Providers({ children }: { children: React.ReactNode }) {
