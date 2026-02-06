@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f7f5ff 0%, #fdf9ff 40%, #f4fbff 100%);
+}
